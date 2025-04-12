@@ -1,8 +1,19 @@
-// نظام القائمة في الجوال
+// النظام القائم على قائمة البرغر
 function toggleMenu() {
   const navLinks = document.querySelector(".nav-links");
   navLinks.classList.toggle("active");
 }
+
+// إغلاق القائمة عند النقر خارجها
+document.addEventListener('click', function(event) {
+  const navLinks = document.querySelector(".nav-links");
+  const burgerMenu = document.querySelector(".burger-menu"); // Assuming your burger menu has the class "burger-menu"
+  
+  // If the click is outside the navLinks and burgerMenu, close the menu
+  if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+    navLinks.classList.remove("active");
+  }
+});
 
 // التمرير إلى أقسام الصفحة
 function scrollToSection(sectionId) {
