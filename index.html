@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صالون الهيبة وركن النكهات قهوتك عالماشي</title>
+    <!-- خطوط جوجل -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- أيقونات فونت أويسم (اختياري) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="brand">
+          <h1>صالون الهيبة</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#hero">الرئيسية</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#slider">الصور</a></li>
+          <li><a href="#coffee">ركن النكهات</a></li>
+          <li><a href="#contact">احجز موعدك الآن </a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- قسم البطل (الهيرو) -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <!-- Circle Headshot -->
+        <div class="headshot">
+          <img src="download (2).jpg" alt="Your Name" />
+        </div>
+        <h2>
+          <span class="highlight">تجربة حلاقة مثالية</span> ومشروبات تأخذك لعالم
+          آخر
+        </h2>
+        <p>
+          أهلاً وسهلاً بكم في <span class="highlight">صالون الهيبة</span> وركن
+          النكهات قهوتك عالماشي؛ جمالٌ وتذوّق تحت سقف واحد.
+        </p>
+        <button onclick="scrollToSection('services')">استعرض خدماتنا</button>
+      </div>
+    </section>
+
+    <!-- الخدمات -->
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <h2 class="section-title">خدماتنا</h2>
+        <p class="section-subtitle">
+          في صالون الهيبة، نقدّم لك خدمات حلاقة متكاملة وبرفقتها أشهى المشروبات
+          الساخنة من ركن النكهات.
+        </p>
+        <div class="cards">
+          <div class="card" data-aos="fade-up">
+            <div class="card-image">
+              <img
+                src="https://blog.g3fashion.com/wp-content/uploads/2020/06/Taper-Fade-1-11-e1594460929585.jpg"
+                alt="حلاقة احترافية"
+              />
+            </div>
+            <div class="card-content">
+              <h3>حلاقة احترافية</h3>
+              <p>
+                نقدّم لك حلاقة شعر احترافية، قصّات عصرية، كسحات مبتكرة، وتدريج
+                متقن يبرز ملامح وجهك لتحصل على أفضل إطلالة تتناسب مع شخصيتك
+                وأسلوبك بكلِّ أناقة وتميز. خبرتنا في استخدام أحدث الأدوات
+                والتقنيات تضمن لك نتيجة استثنائية كل مرة تزورنا فيها.
+              </p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-image">
+              <img
+                src="https://atozhairstyles.com/wp-content/uploads/2018/09/1-Ducktail-Beard.jpg"
+                alt="ترتيب اللحية"
+              />
+            </div>
+            <div class="card-content">
+              <h3>ترتيب وتشيب وتحديد اللحية</h3>
+              <p>
+                نرتب ونشذّب ونحدّد لحيتك وكأنها لوحة فنية مرسومة بدقة وإتقان.
+                نستخدم أحدث الأدوات الاحترافية لنشذّب الشعر الزائد ونحدّد خطوط
+                لحيتك بطريقة تبرز ملامح وجهك وتعطيك إطلالة كلها هيبة وأناقة مع
+                عناية شاملة من قص وترتيب وتشذيب لتألق دائم، مع ستايلات خليجية،
+                لف، وأوروبية.
+              </p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-image">
+              <img
+                src="http://beardstyle.net/wp-content/uploads/2017/03/0e842a146a948c1663db2c83f8f1d693-1024x1024.jpg"
+                alt="المساج والاسترخاء"
+              />
+            </div>
+            <div class="card-content">
+              <h3>العناية بالبشرة وتصفيف الشعر</h3>
+              <p>
+                تصفيف شعر رهيب مع ضرب سشوار احترافي لإطلالة متألقة، مع مثبت شعر
+                أو كريم الشعر أو واكس أو داكس حسب الطلب، بالإضافة لى سنفرة وجه و
+                ترطيب و ماسكات النعناع أو الفحم أو مرطبات للبشرة لتفتيح مسامات
+                الوجه و لإطلالة منعشة، حمام زيت و تمليس لشعر لامع و حريري و
+                متألق، وإزالة الشعر بالشمع و الخيط و صبغة لحية اختيارية، مجموعة
+                متكاملة من خدمات العناية بالوجه و الشعر و البشرة
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="section-subtitle"
+        style="
+          color: #ffffff;
+          background-color: #1a1a1a;
+          padding: 10px;
+          border-radius: 8px;
+          font-size: 18px;
+          text-align: center;
+        "
+      >
+        جميع الخدمات المذكورة أعلاه
+        <span style="color: #d4af37; font-weight: bold">مشمولة</span> مع كل
+        <span style="color: #d4af37; font-weight: bold">حلاقة وتحديد لحية</span
+        >. وبالنسبة للسعر، كل الخدمات
+        <span style="color: #d4af37; font-weight: bold"
+          >مع تحديد اللحية وقصة الشعر فقط بدينارين</span
+        >، لأنك
+        <span style="color: #d4af37; font-weight: bold"
+          >تستحق الأفضل دائماً</span
+        >.
+      </p>
+    </section>
+    <!-- الخدمات -->
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <div class="cards">
+          <div class="card" data-aos="fade-up">
+            <div class="card-image">
+              <img
+                src="https://www.dmarge.com/wp-content/uploads/2016/09/long-hair-men-3.jpg"
+                alt="حلاقة احترافية"
+              />
+            </div>
+            <div class="card-content">
+              <h3>كيراتين و بروتين أمريكي و برازيلي</h3>
+              <p>
+                الكيراتين والبروتين في صالون الهيبة مو مجرد علاج… هي تجربة فاخرة
+                تعيد لشعرك هيبته. نستخدم أجود أنواع الكيراتين والبروتين الأمريكي
+                والبرازيلي الأصلي، بتقنيات احترافية ودقة عالية. سواء كان شعرك
+                تعبان، هايش، أو فقد لمسته الناعمة، إحنا نرجّع له الحيوية،
+                اللمعان، والانسيابية. والنتيجة؟ شعر أنعم، أقوى، وأسهل بالتسريح –
+                مكفول 6 أشهر! تجربة بتخلي الكل يلاحظ الفرق، ويسألك: "وين سويت
+                شعرك؟" هذه الخدمة ب 7 دنانير فقط يعني ببلاش
+              </p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-image">
+              <img
+                src="https://content.latest-hairstyles.com/wp-content/uploads/hairstyles-for-men-with-medium-hair-1x1-1.jpg"
+                alt="ترتيب اللحية"
+              />
+            </div>
+            <div class="card-content">
+              <h3>تنظيف البشرة على أحدث أجهزة البخار</h3>
+              <p>
+                هي استثمار في راحتك وثقتك. نقدّم لك جلسات تنظيف عميق للبشرة
+                باستخدام أحدث أجهزة العناية العالمية، لأنك تستحق الأفضل، مش أي
+                شيء عادي. نستخدم تقنيات متقدمة تزيل الأوساخ، الدهون، والخلايا
+                الميتة، وتعيد لبشرتك نضارتها وإشراقتها الطبيعية، بدون أي تعب.
+                النتيجة؟ بشرة نضرة، صحية، وتلمع من النظافة… كأنها تتنفس من جديد.
+                سعر هذه الخدمة فقط دينارين! نعم دينارين
+              </p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-image">
+              <img
+                src="https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2023/01/bottle_green_groom_suit__1_.jpg"
+                alt="المساج والاسترخاء"
+              />
+            </div>
+            <div class="card-content">
+              <h3>حلاقة العرسان</h3>
+              <p>
+                حلاقة العرسان في صالون الهيبة هي باقة متكاملة فيها كل شيء تحتاجه
+                لتطلع بأبهى طلة في أهم يوم بحياتك. من حلاقة شعر احترافية، تحديد
+                لحية بدقة، تنظيف بشرة بأحدث الأجهزة، ماسكات، عطور فاخرة، وتصفيف
+                نهائي يخلي الكل يلتفت لك. والمفاجأة؟ كل هالخدمات، مش بـ30 أو 40
+                دينار زي باقي الصالونات... عندنا فقط بـ15 دينار. نعم، كل شي…
+                وبجودة الهيبة.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="section-subtitle"
+        style="
+          color: #ffffff;
+          background-color: #1a1a1a;
+          padding: 10px;
+          border-radius: 8px;
+          font-size: 18px;
+          text-align: center;
+        "
+      >
+        في صالون الهيبة، الحلاقة مش بس مقص وموس. عندنا
+        <span style="color: #ffd700; font-weight: bold"
+          >أحدث القصات والكسحات وتحديد اللحية</span
+        >. خدماتنا
+        <span style="color: #ffd700; font-weight: bold"
+          >متكاملة وبأسعار نارية دايماً</span
+        >، مش عروض. أدواتنا دايماً معقمة ومنحترم وقت الزبون. منفتحين من الصبح
+        لليل لتلبية احتياجاتكم. إذا كنت مستعجل وما بدك تحلق،
+        <span style="color: #ffd700; font-weight: bold">تعال سرح شعرك</span>.
+        <span style="color: #ffd700; font-weight: bold"
+          >كل شي من الصفر للاحتراف</span
+        >. أهم شي
+        <span style="color: #ffd700; font-weight: bold">رضا الزبون</span> لأن
+        الحلاقة هي توقيعك الشخصي. لازم تنسئل:
+        <span style="color: #ffd700; font-weight: bold">وين حالق؟</span>
+        <span style="color: #ffd700; font-weight: bold"
+          >احلقها صح واحلقها هيبة</span
+        >.
+      </p>
+    </section>
+    <!-- Featured Slider -->
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img
+            src="https://content.latest-hairstyles.com/wp-content/uploads/barber-approved-1950s-quiff-style.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2384/0833/files/high-tight-haircuts-men_1024x1024.webp?v=1734712668"
+            alt="Featured Photo 2"
+          />
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img
+            src="https://www.notyourfathersbarber.com/wp-content/uploads/2019/08/onelovebarber-slick-back-skin-fade-undercut-e1492834811535.jpg"
+            alt="Featured Photo 3"
+          />
+        </div>
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0639/1237/8602/files/High_Skin_Fade_Haircuts_480x480.jpg?v=1714127245"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img
+            src="https://meroscut.com/cdn/shop/files/Hard-Side-Part_jpg.webp?v=1722424290"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img
+            src="https://i.pinimg.com/1200x/b1/e3/c4/b1e3c4425978a68b1022b59d9b07e991.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img
+            src="https://www.thefashionisto.com/wp-content/uploads/2023/06/Pompadour-High-Fade.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://www.byrdie.com/thmb/IuzDMngUnDDVVHiUPk08wh_s85c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/92832139_3704957672879399_5337622616719902770_n-b4f58150a45342daaf162d1c1903cb97.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://wellgroomedgentleman.com/wp-content/uploads/Sculpted-Horizon-The-Classic-Fade-Meets-Modern-Volume-833x1024.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://rafaelsbarbershop.com/storage/photos/1/posts/mens-haircuts/mens-haircuts-5.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0639/1237/8602/files/Hairstyles_For_Medium_Length_Hair_Formal_2_480x480.webp?v=1739535482"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2081/8453/files/tombaxter_hair_-cool-textured-quiff-haircut-for-men_large.jpg?v=1508107232"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://manofmany.com/wp-content/uploads/2023/06/Pompadour-Athos-Barber-1930.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://i.pinimg.com/564x/f5/d6/63/f5d66379fb5403f5201753919b8ce1ec.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://michaelanthonysalondc.com/wp-content/uploads/2019/04/bigstock-Handsome-man-in-black-suit-wit-240819310.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://static.wixstatic.com/media/045ee3_42040837b54940cd9dec2fa4abf56f05~mv2.jpg/v1/fill/w_809,h_1184,al_c,q_85,enc_avif,quality_auto/045ee3_42040837b54940cd9dec2fa4abf56f05~mv2.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0639/1237/8602/files/Skin_Fade_Haircut_for_Men_480x480.jpg?v=1735383358"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://zoylee.com/wp-content/uploads/2021/05/Short-spiky-haircut-with-beard.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://haircutinspiration.com/wp-content/uploads/Brushed-Up-Mid-Skin-Fade-Undercut-Textured-Top.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://www.lordhair.com/media/blog/haircuts-for-men/29-Butch_Cut.jpg"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://res.cloudinary.com/conferences-and-exhibitions-pvt-ltd/image/upload/v1605177009/Hair%20and%20Beauty%20Trends/November-2020/12-Nov/18_Hairstyles_for_grooms/Lead_izy7rf.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0434/4749/files/David_Beckham_Royal_Wedding_grande.jpg?v=1526734633"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://michaelanthonysalondc.com/wp-content/uploads/2019/04/bigstock-Handsome-man-in-black-suit-wit-240819310.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0639/1237/8602/files/Classic_Undercut_nbsp_Oval_Face_Shape_Hairstyles_Male_with_Beard_2_480x480.webp?v=1740048540"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2384/0833/files/13_Textured_Fringe_1024x1024.jpg?v=1668876361"
+            alt="Featured Photo 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://firstandmaneaz.com/wp-content/uploads/2024/07/Best-Hairstyles-for-Men-Cool-Haircuts-for-Guys-1024x675.jpg"
+            alt="Featured Photo 1"
+          />
+        </div>
+      </div>
+      <button class="slide-btn prev" id="prevBtn">&#10094;</button>
+      <button class="slide-btn next" id="nextBtn">&#10095;</button>
+    </div>
+
+    <!-- قسم القهوة: ركن النكهات قهوتك عالماشي -->
+    <section id="coffee" class="coffee section-padding">
+      <div class="container">
+        <h2 class="section-title">ركن النكهات قهوتك عالماشي و تواصي</h2>
+        <p class="section-subtitle">
+          قهوتك، شايك، شاي كرك، هوت تشوكلت، كبتشينو، نسكافيه، وكل اللي تشتهيه
+          بخلطة الهيبة الزاكية… بين إيديك، سواء بدك تمخمخ أثناء الحلاقة أو
+          بعدها. أو سواء بدك تتصل و توصي و تيجي توخذ طلبك، طلبك بكون جاهز قبل ما
+          توصل: اتصل ووصي طلبك الآن على:0778169858
+        </p>
+
+        <div class="coffee-list" data-aos="fade-up">
+          <div class="coffee-item">
+            <i class="fas fa-mug-hot"></i>
+            <h3>قهوة العميد</h3>
+            <p>
+              المذاق الأصيل الذي يمنحك الدفء والنكهة العريقة والصحصحة المزبوطة،
+              فقط بنصف دينار للكاسة و ليس خمسة و سبعين قرش.
+            </p>
+          </div>
+
+          <div class="coffee-item" data-aos-delay="100">
+            <i class="fas fa-coffee"></i>
+            <h3>شاي كرك</h3>
+            <p>
+              مزيج مميز من الحليب والشاي والبهارات لأفضل استمتاع، فقط بنصف دينار
+              للكاسة.
+            </p>
+          </div>
+
+          <div class="coffee-item" data-aos-delay="200">
+            <i class="fas fa-blender"></i>
+            <h3>نسكافيه</h3>
+            <p>طعم النسكافيه مع الرغوة اللذيذة فقط نصف دينار للكاسة.</p>
+          </div>
+
+          <div class="coffee-item" data-aos-delay="300">
+            <i class="fas fa-mug-hot"></i>
+            <h3>هوت تشوكلت</h3>
+            <p>
+              مذاق بطعم الشوكولاة الساخة و الصحصحة الرهيبة، فقط نصف دينار للكاسة
+            </p>
+          </div>
+
+          <div class="coffee-item" data-aos-delay="300">
+            <i class="fas fa-coffee"></i>
+            <h3>كباتشينو</h3>
+            <p>
+              مذاق الكبتشينو الأيطالي الذي يروق المزاج، فقط نصف دينار للكاسة
+            </p>
+          </div>
+
+          <div class="coffee-item" data-aos-delay="300">
+            <i class="fas fa-leaf"></i>
+            <h3>شاي النكهات</h3>
+            <p>
+              مذاق نكهات الأعشاب الطبيعية ذات الرائحة الفواحة، فقط خمسة و ثلاثين
+              قرش للكاسة
+            </p>
+          </div>
+        </div>
+        <!-- end coffee-list -->
+      </div>
+      <!-- end container -->
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <h2 class="section-title">احجز موعدك الآن</h2>
+        <p class="section-subtitle">
+          نسعد بخدمتك دومًا،احجز موعدك الآن أو استفسر عن أي خدمة، و لا زر
+          صالوننا الآن لتتمتع بتجربة حلاقة استثنائية.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <p>
+              <i class="fas fa-map-marker-alt"></i> إربد- ججين-مقابل دكانة أبو
+              زكي-بجانب أسواق التميمي-قبل قوسة دوقرا بميتين متر عاليمين، قبل
+              دخلة المكرمة الملكيّة. أو اضغط على الخريطة اللي تحت و رح تعطيك
+              عنوان الصالون بالزّبط.
+            </p>
+            <p><i class="fas fa-phone"></i> 077-816-9858</p>
+            <p>
+              <i class="fas fa-user-tie"></i> أحمد العزام: مؤسس صالون الهيبة
+            </p>
+            <p>
+              <i
+                class="fas fa-user-circle"
+                style="color: #ffd700; font-size: 1.5rem"
+              ></i>
+              زور الموقع بشكل دائم لمشاهدة آخر القصات و العروض اللي بنجددها
+              باستمرار، واذا عجبتك أي قصة أو تسريحة بس فرجينا إياها و رح نحلقلك
+              إياها صح! أهلا وسهلا فيك
+            </p>
+          </div>
+          <div class="map-container" data-aos="fade-left">
+            <!-- يمكنك تحديث رابط خرائط جوجل أدناه بحسب موقعك الحقيقي -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.535426038916!2d35.76552198297894!3d32.59191173473948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c732dcb851893%3A0xd42b6f5a1228a156!2z2LXYp9mE2YjZhiDYp9mE2YfZitio2Kk!5e0!3m2!1sen!2sus!4v1744487589957!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- زر العودة للأعلى -->
+    <button class="scroll-top-btn" onclick="scrollToTop()">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+      <div class="container">
+        <p>جميع الحقوق محفوظة &copy; 2025 صالون الهيبة</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
