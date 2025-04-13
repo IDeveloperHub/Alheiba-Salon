@@ -89,7 +89,7 @@
               />
             </div>
             <div class="card-content">
-              <h3>ترتيب ,تشذيب وتحديد و تدريج اللحية</h3>
+              <h3>ترتيب وتشذيب وتحديد و تدريج اللحية</h3>
               <p>
                 نرتب ونشذّب ونحدّد لحيتك وكأنها لوحة فنية مرسومة بدقة وإتقان.
                 نستخدم أحدث الأدوات الاحترافية لنشذّب الشعر الزائد ونحدّد خطوط
@@ -224,7 +224,7 @@
         >. خدماتنا
         <span style="color: #ffd700; font-weight: bold"
           >متكاملة وبأسعار نارية دايماً</span
-        >، مش عروض. أدواتنا دايماً معقمة ومنحترم وقت الزبون. فاتحين من الصبح
+        >، مش عروض. أدواتنا دايماً معقمة ومنحترم وقت الزبون. منفتحين من الصبح
         لليل لتلبية احتياجاتكم. إذا كنت مستعجل وما بدك تحلق،
         <span style="color: #ffd700; font-weight: bold">تعال سرح شعرك</span>.
         <span style="color: #ffd700; font-weight: bold"
@@ -234,7 +234,7 @@
         الحلاقة هي توقيعك الشخصي. لازم تنسئل:
         <span style="color: #ffd700; font-weight: bold">وين حالق؟</span>
         <span style="color: #ffd700; font-weight: bold"
-          >احلقها صح واحلقها هيبة</span
+          >عشان هيك: احلقها صح واحلقها هيبة</span
         >.
       </p>
     </section>
@@ -473,13 +473,66 @@
       </div>
       <!-- end container -->
     </section>
+  </section>
+  <!-- قسم التسجيل للحصول على العروض -->
+  <section id="subscribe" class="subscribe section-padding">
+    <div class="container">
+      <h2 class="section-title">حط اسمك و رقم تلفونك عشان يوصلك كل العروض</h2>
+      <p class="section-subtitle">
+        عشان يوصلك رسالة على رقم تلفونك بآخر العروض اللي بنطرحها بصالون
+        الهيبة، و آخر القصات و الصيحات و الترندات الأوروبية والخليجية
+        والإيطالية والتركية، و عشان مباشرة تسمع عن العروض، دخل اسمك و رقم
+        تلفونك وحط "إرسال"، و لما ننزّل عروض أو خدمات جديدية أو قصات جديدة،
+        رقمك بكون عندنا، و رح يوصلك مسج عن كل تفاصيل العرض مباشرة لما ننزله.
+      </p>
 
+      <!-- Form with Formspree integration -->
+      <form
+        id="contactForm"
+        action="https://formspree.io/f/xpwpbydy"
+        method="POST"
+        class="styled-form"
+      >
+        <div class="form-group">
+          <label for="name"> دخل اسمك هون</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="اكتب اسمك هنا"
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">دخل رقم تلفونك هون </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="مثال: 0778169858"
+            required
+          />
+        </div>
+        <button type="submit" class="btn-submit">أرسل</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Confirmation Popup -->
+  <div id="confirmationPopup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="closePopup">&times;</span>
+      <p>
+        شكرا لانضمامك. رح يوصلك مسج على تلفونك لما ننزل العروض او لما تنزل
+        قصات جديدة.
+      </p>
+    </div>
+  </div>
     <!-- قسم التواصل -->
     <section id="contact" class="contact section-padding">
       <div class="container">
         <h2 class="section-title">احجز موعدك الآن</h2>
         <p class="section-subtitle">
-          نسعد بخدمتك دومًا،احجز موعدك الآن أو استفسر عن أي خدمة، و لا زر
+          نسعد بخدمتك دومًا،احجز موعدك الآن أو استفسر عن أي خدمة، وزر  
           صالوننا الآن لتتمتع بتجربة حلاقة استثنائية.
         </p>
         <div class="contact-grid">
@@ -531,7 +584,11 @@
         <p>جميع الحقوق محفوظة &copy; 2025 صالون الهيبة</p>
       </div>
     </footer>
-
+    <script
+      src="https://cdn.counter.dev/script.js"
+      data-id="1352eae3-8256-487a-85f6-e08abaac5740"
+      data-utcoffset="-6"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
