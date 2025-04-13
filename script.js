@@ -5,10 +5,10 @@ function toggleMenu() {
 }
 
 // إغلاق القائمة عند النقر خارجها
-document.addEventListener('click', function(event) {
+document.addEventListener("click", function (event) {
   const navLinks = document.querySelector(".nav-links");
   const burgerMenu = document.querySelector(".burger-menu"); // Assuming your burger menu has the class "burger-menu"
-  
+
   // If the click is outside the navLinks and burgerMenu, close the menu
   if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
     navLinks.classList.remove("active");
@@ -93,3 +93,48 @@ setInterval(() => {
   currentSlide = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
   showSlide(currentSlide);
 }, 2500); // Adjust
+// Handling form submission and error handling
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Form data collection
+    const formData = new FormData(this);
+
+    // Send the form data to Formspree via fetch
+    fetch(this.action, {
+      method: this.method,
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          // Show confirmation pop-up if submission is successful
+          document.getElementById("confirmationPopup").style.display = "flex";
+        } else {
+          // Show error message if submission failed
+          alert("حدث خطأ! يرجى المحاولة لاحقًا.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("حدث خطأ! يرجى المحاولة لاحقًا.");
+      });
+  });
+
+// Close the confirmation pop-up when the user clicks the close button
+document.getElementById("closePopup").addEventListener("click", function () {
+  document.getElementById("confirmationPopup").style.display = "none";
+});
+
+// Close the pop-up if the user clicks anywhere outside of the pop-up content
+document
+  .getElementById("confirmationPopup")
+  .addEventListener("click", function (event) {
+    if (event.target === this) {
+      document.getElementById("confirmationPopup").style.display = "none";
+    }
+  });
